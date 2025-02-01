@@ -28,10 +28,10 @@
         background: rgb(30, 30, 30);
 }
 .logo{
-    	background-color: #000000;
+    	background: #000000;
 }
 .logo:hover{
-        background-color: #000000;
+        background: #000000;
 }
 p{
 	font-family:msyh;
