@@ -28,11 +28,11 @@
 .navlist a:hover{
         background: rgb(30, 30, 30);
 }
-.title{
-	font-family:msyhbd;
-	font-style:italic;
-	font-weight:bold;
+.logo{
     	background-color: #000000;
+}
+.navlist .logo:hover{
+        background: rgb(30, 30, 30);
 }
 p{
 	font-family:msyh;
