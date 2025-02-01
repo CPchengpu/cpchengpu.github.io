@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>CPchengpu其他文件下载</title>
-
-    <head>
-
-    <body>
-        <link rel="stylesheet" href="/mainstyle.css">
-        <div class="nav">
-            <!--列表-->
-            <ul class="navlist">
-                <li> <a href="/" class="title">CPchengpu</a> </li>
-                <li> <a href="../">返回</a> </li>
-            </ul>
-        </div>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+</head>
+<body>
+        <div id="bar"></div>
         <h1>CPchengpu其他文件下载</h1>
         <h3>此处下载的文件著作权不属于Dev. CPchengpu
             <p>空_Nothing</p>
