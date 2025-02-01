@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <title>CPchengpu网站的工具-英语名句</title>
-<head>
-
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+</head>
 <body>
-<link rel="stylesheet" href="/mainstyle.css">
-        <div class="nav">
-            <ul class="navlist">
-		            <li> <a href="/" class="title">CPchengpu</a> </li>
-                <li> <a href="/">返回</a> </li>
-     
-            </ul>
-        </div>
+        <div id="bar"></div>
 <h1>英语名句</h1>
 <div class="text">
 1、To be both a speaker of words and a doer of deeds.
