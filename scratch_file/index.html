@@ -3,19 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>CPchengpu的Scratch作品</title>
-
-    <head>
-
-    <body>
-        <link rel="stylesheet" href="/mainstyle.css">
-        <div class="nav">
-            <!--列表-->
-            <ul class="navlist">
-                <li> <a href="/" class="title">CPchengpu</a> </li>
-                <li> <a href="/">返回</a> </li>
-
-            </ul>
-        </div>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+</head>
+<body>
+        <div id="bar"></div>
         <h3>CPchengpu的Scratch原创作品</h3>
         <p>HTML版Scratch作品的在线体验部分的转换来自于HTMLifier</p>
         <p>little跑酷-火柴人版现已上线CCW共创世界</p>
