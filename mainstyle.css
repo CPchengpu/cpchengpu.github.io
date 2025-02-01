@@ -7,14 +7,14 @@
 }
 		
 .nav{
-        height: 70px;
+        height: 80px;
         background: linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100));
 }
 .navlist li{
         float: left;
-        height: 70px;
+        height: 80px;
         width: 150px;
-        line-height: 70px;
+        line-height: 80px;
         text-align: center;
 }
 .navlist a{
