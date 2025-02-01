@@ -4,7 +4,7 @@
     <title>CPchengpu网站的下载页</title>
 	<script>
 	document.addEventListener("DOMContentLoaded", function() {
-	fetch('bar.html')
+	fetch('/bar.html')
 	.then(response => response.text())
 	.then(data => {
 	document.getElementById('bar').innerHTML = data;
