@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>音乐播放器(CPchengpu)</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
 </head>
-<link rel="stylesheet" href="/mainstyle.css">
-<div class="nav">
-    <!--列表-->
-    <ul class="navlist">
-        <li> <a href="/" class="title">CPchengpu</a> </li>
-        <li> <a href="/">返回</a> </li>
-
-    </ul>
-</div>
+<body>
+        <div id="bar"></div>
 <h1>CPchengpu网站的音乐播放器</h1>
 <h2>声明：本页的所有歌曲的版权都归原版权人所有，且歌曲的内容与本站无关</h2>
 <p>注:此页面仅支持在支持HTML5技术的浏览器上使用(因Github服务器网速较慢，所以极有可能出现卡顿现象)</p>
