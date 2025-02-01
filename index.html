@@ -5,22 +5,19 @@
     <head>
         <meta charset="UTF-8">
         <title>CPchengpu</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('navigation').innerHTML = data;
+	});
+	});
+	</script>
     </head>
     <body>
-<link rel="stylesheet" href="/mainstyle.css">
-        <div class="nav">
-            <!--列表-->
-            <ul class="navlist">
-		<li> <a href="/" class="title">CPchengpu</a> </li>
-                <li> <a href="/scratch_file/">Scratch</a> </li>
-	        <li> <a href="/stories/">碎碎念</a> </li>
-                <li> <a href="/download/">下载页</a> </li>
-                <li> <a href="/mymusic/">音乐作品</a> </li>
-                <li> <a href="/musicplayer/">音乐播放器</a> </li>
-	        <li> <a href="/tool/">小工具</a> </li>
-		</ul>
-        </div>
-	<!-- #include virtual="https://cpchengpu.github.io/_tab.html" -->
+<div id="navigation"></div>
+<!-- #include virtual="https://cpchengpu.github.io/_tab.html" -->
 <img src="/imgs/logo_wide_C.png" alt="https://CPchengpu.github.io" width="1080" height="232">
 <p>你好，这里是CPchengpu的第一个网站——https://CPchengpu.github.io</p>
 <p>https://CPchengpu.github.io/ 是Dev.CPchengpu所有的个人网站</p>
