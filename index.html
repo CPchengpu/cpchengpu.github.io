@@ -1,0 +1,91 @@
+	<!-- For_https://cpchengpu.github.io -->
+	<!-- (c)CPchengpu_2022-2026 -->
+	<!-- follows_Apache_License_20 -->
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CPchengpu的主页</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+    </head>
+    <body>
+<div id="bar"></div>
+<!-- #include virtual="https://cpchengpu.github.io/_tab.html" -->
+<!--<img src="/imgs/logo_wide_C.png" alt="https://CPchengpu.github.io" width="1080" height="232">-->
+<h1>你好!Hello!</h1>
+<h2>这里是CPchengpu的个人主页</h2>
+<p><br></p>
+<p>https://CPchengpu.github.io/</p>
+<p>©Copyright 2022-2026 CPchengpu</p>
+<p>"CP"logo is belongs to CPchengpu</p>
+<p>"CPchengpu" can be abbreviated as "ChPu."</p>
+<p>POWERED BY GithubPages</p>
+<p>This website follows the Apache license 2.0 to open source on Github</p>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0);
+
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second >= 0) {
+            time[4] = second;
+        }
+        return time;
+    }</script><script type="text/javascript" language="javascript">
+    function setTime() {
+        var create_time = Math.round(new Date(Date.UTC(2022, 02, 21, 20, 51, 0)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml =currentTime[1] + '天'+ currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]+ '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }    setInterval(setTime, 1000);
+    </script>
+
+<div class="text">本站创建于2022年3月21日20点51分，已运行</div><span id="htmer_time" class="timer"></span>
+    <li> <a href="https://github.com/cpchengpu" target="_blank">我的GitHub账号</a> </li>	
+    <li> <a href="https://github.com/cpchengpu/cpchengpu.github.io" target="_blank">网站源代码</a> </li>
+    <li> <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License 2.0</a> </li>
+<h2>公告栏</h2>
+<p> </p>
+<h3>唠嗑一下</h3>
+<p>2026.1.5</p>
+<p>大家好</p>
+<p>元旦快乐！ </p>
+<p>迎新辞旧，把一些之前的旧项目整理到了时光机板块里。</p>
+<p>但是这样下去本站就没没有什么东西了。</p>
+<p>所以最近会新更新一些东西啊。</p>
+<p></p>
+<p></p>
+<h3>更新日志在下面哈</h3>
+<a href="/devlog.html" target="">没错看日志点这里</a>
+<p>----------------------------</p>
+<h2>一些有意思的链接</h2>
+    <li> <a href="https://fangkuai767.github.io/EatKun/" target="_blank">只因你太美音游</a> </li>
+    <li> <a href="https://github.com" target="_blank">GitHub</a> </li>
+    <li> <a href="https://digdig.io" target="_blank">DigDig</a> </li>
+    <li> <a href="https://mc.js.cool" target="_blank">MC.js在线MC</a> </li>
+    <li> <a href="https://luogu.com.cn/" target="_blank">洛谷</a> </li>
+	
+    </body>
+</html>
+ 
