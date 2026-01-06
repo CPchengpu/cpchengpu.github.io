@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>CPchengpu网站的下载页</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+</head>
+<body>
+        <div id="bar"></div>
+        <h1>CPchengpu网站的下载页</h1>
+        <li> <a href="./own">站长自有文件下载</a> </li>
+        <li> <a href="./other">其他文件下载</a> </li>
+
+<body>
+	

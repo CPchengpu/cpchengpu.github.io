@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CPchengpu的音乐</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	fetch('/bar.html')
+	.then(response => response.text())
+	.then(data => {
+	document.getElementById('bar').innerHTML = data;
+	});
+	});
+	</script>
+</head>
+<body>
+        <div id="bar"></div>
+        <h1>CPchengpu的音乐</h1>
+        <p>注:此页面仅支持在支持HTML5技术的浏览器上使用(因Github服务器网速较慢，所以极有可能出现卡顿现象)</p>
+        <p>奔驰X</p>
+        <audio controls>
+            <source src="./奔驰X.mp3" type="audio/mpeg">
+            不支持HTML5技术或出现了错误。
+        </audio>
+        >
+        <p>逃离</p>
+        <audio controls>
+            <source src="./逃离.wav" type="audio/mpeg">
+            不支持HTML5技术或出现了错误。
+        </audio>
+
+<body>
